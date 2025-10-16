@@ -55,7 +55,9 @@ const ClientsCarousel = () => {
               <img 
                 src={client.logo} 
                 alt={client.name}
-                className="max-w-[180px] max-h-[80px] w-auto h-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+                className={`w-auto h-auto object-contain opacity-70 hover:opacity-100 transition-opacity ${
+                  index === 5 ? 'max-w-[220px] max-h-[100px]' : 'max-w-[180px] max-h-[80px]'
+                }`}
               />
             </Card>
           ))}
@@ -74,7 +76,9 @@ const ClientsCarousel = () => {
                     <img 
                       src={client.logo} 
                       alt={client.name}
-                      className="max-w-[180px] max-h-[80px] w-auto h-auto object-contain"
+                      className={`w-auto h-auto object-contain ${
+                        index === 5 ? 'max-w-[220px] max-h-[100px]' : 'max-w-[180px] max-h-[80px]'
+                      }`}
                     />
                   </Card>
                 </div>
