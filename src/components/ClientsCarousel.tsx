@@ -56,7 +56,7 @@ const ClientsCarousel = () => {
                 src={client.logo} 
                 alt={client.name}
                 className={`w-auto h-auto object-contain opacity-70 hover:opacity-100 transition-opacity ${
-                  index === 5 ? 'max-w-[220px] max-h-[100px]' : 'max-w-[180px] max-h-[80px]'
+                  index === 5 ? 'max-w-[190px] max-h-[85px]' : 'max-w-[180px] max-h-[80px]'
                 }`}
               />
             </Card>
@@ -77,7 +77,7 @@ const ClientsCarousel = () => {
                       src={client.logo} 
                       alt={client.name}
                       className={`w-auto h-auto object-contain ${
-                        index === 5 ? 'max-w-[220px] max-h-[100px]' : 'max-w-[180px] max-h-[80px]'
+                        index === 5 ? 'max-w-[190px] max-h-[85px]' : 'max-w-[180px] max-h-[80px]'
                       }`}
                     />
                   </Card>
