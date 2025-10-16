@@ -1,14 +1,19 @@
 import { useEffect, useState } from "react";
 import { Card } from "@/components/ui/card";
+import logoBR from "@/assets/clients/logo-br.png";
+import logoElite from "@/assets/clients/logo-elite.png";
+import logoImperioSublimacao from "@/assets/clients/logo-imperio-sublimacao.png";
+import logoTrix from "@/assets/clients/logo-trix.png";
+import logoAtacadaoDTF from "@/assets/clients/logo-atacadao-dtf.png";
+import logoImperioTransfer from "@/assets/clients/logo-imperio-transfer.png";
 
-// Placeholder client logos - replace with actual client logos
 const clients = [
-  { name: "Cliente 1", logo: "https://via.placeholder.com/150x80/8B5CF6/FFFFFF?text=Cliente+1" },
-  { name: "Cliente 2", logo: "https://via.placeholder.com/150x80/8B5CF6/FFFFFF?text=Cliente+2" },
-  { name: "Cliente 3", logo: "https://via.placeholder.com/150x80/8B5CF6/FFFFFF?text=Cliente+3" },
-  { name: "Cliente 4", logo: "https://via.placeholder.com/150x80/8B5CF6/FFFFFF?text=Cliente+4" },
-  { name: "Cliente 5", logo: "https://via.placeholder.com/150x80/8B5CF6/FFFFFF?text=Cliente+5" },
-  { name: "Cliente 6", logo: "https://via.placeholder.com/150x80/8B5CF6/FFFFFF?text=Cliente+6" },
+  { name: "BR", logo: logoBR },
+  { name: "Elite", logo: logoElite },
+  { name: "Império da Sublimação", logo: logoImperioSublimacao },
+  { name: "Trix", logo: logoTrix },
+  { name: "Atacadão do DTF", logo: logoAtacadaoDTF },
+  { name: "Império do Transfer", logo: logoImperioTransfer },
 ];
 
 const ClientsCarousel = () => {
@@ -44,13 +49,13 @@ const ClientsCarousel = () => {
           {clients.map((client, index) => (
             <Card 
               key={index}
-              className="bg-card/50 backdrop-blur-sm border-border p-8 flex items-center justify-center hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_20px_hsl(271_76%_63%_/_0.2)] animate-slide-up"
+              className="bg-card/50 backdrop-blur-sm border-border p-8 flex items-center justify-center hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_20px_hsl(271_76%_63%_/_0.2)] animate-slide-up h-32"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <img 
                 src={client.logo} 
                 alt={client.name}
-                className="max-w-full h-auto opacity-70 hover:opacity-100 transition-opacity"
+                className="max-w-[180px] max-h-[80px] w-auto h-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
               />
             </Card>
           ))}
@@ -65,11 +70,11 @@ const ClientsCarousel = () => {
             >
               {clients.map((client, index) => (
                 <div key={index} className="w-full flex-shrink-0 px-4">
-                  <Card className="bg-card/50 backdrop-blur-sm border-border p-8 flex items-center justify-center">
+                  <Card className="bg-card/50 backdrop-blur-sm border-border p-8 flex items-center justify-center h-32">
                     <img 
                       src={client.logo} 
                       alt={client.name}
-                      className="max-w-full h-auto"
+                      className="max-w-[180px] max-h-[80px] w-auto h-auto object-contain"
                     />
                   </Card>
                 </div>

@@ -23,7 +23,7 @@ const Hero = () => {
             <img 
               src={logoImpulse} 
               alt="Impulse Logo" 
-              className="h-32 md:h-40 w-auto animate-float"
+              className="h-48 md:h-56 lg:h-64 w-auto animate-float"
             />
           </div>
 
