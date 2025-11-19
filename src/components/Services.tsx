@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { TrendingUp, Target, Megaphone, BarChart3, Zap, Users } from "lucide-react";
+import { TrendingUp, Target, Megaphone, BarChart3, Monitor, Users } from "lucide-react";
 
 const services = [
   {
@@ -23,9 +23,9 @@ const services = [
     description: "Análise de dados e métricas para decisões estratégicas baseadas em resultados.",
   },
   {
-    icon: Zap,
-    title: "Growth Marketing",
-    description: "Estratégias de crescimento acelerado com foco em conversão e retenção.",
+    icon: Monitor,
+    title: "Criação de site",
+    description: "Desenvolvimento de sites profissionais e responsivos para fortalecer sua presença digital.",
   },
   {
     icon: Users,
