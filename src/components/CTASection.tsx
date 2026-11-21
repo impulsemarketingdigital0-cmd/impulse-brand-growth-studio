@@ -1,10 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Sparkles } from "lucide-react";
 
-const CTASection = () => {
-  const whatsappNumber = "5511999999999"; // Replace with actual number
-  const whatsappMessage = encodeURIComponent("Olá! Quero impulsionar minha marca!");
+const WHATSAPP_URL = "https://wa.me/5511941345199";
 
+const CTASection = () => {
   return (
     <section className="py-24 relative overflow-hidden">
       {/* Background Effects */}
@@ -34,10 +33,12 @@ const CTASection = () => {
               variant="whatsapp" 
               size="lg"
               className="text-lg px-10 py-7"
-              onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank')}
+              asChild
             >
-              <MessageCircle className="mr-2 h-6 w-6" />
-              Fale com um especialista
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="mr-2 h-6 w-6" />
+                Fale com um especialista
+              </a>
             </Button>
           </div>
 

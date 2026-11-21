@@ -2,10 +2,9 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle, Rocket } from "lucide-react";
 import logoImpulse from "@/assets/logo-impulse.png";
 
-const Hero = () => {
-  const whatsappNumber = "5511999999999"; // Replace with actual number
-  const whatsappMessage = encodeURIComponent("Olá! Gostaria de impulsionar minha marca com a Impulse!");
+const WHATSAPP_URL = "https://wa.me/5511941345199";
 
+const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Effects */}
@@ -48,10 +47,12 @@ const Hero = () => {
               variant="whatsapp" 
               size="lg"
               className="text-lg px-8 py-6"
-              onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank')}
+              asChild
             >
-              <MessageCircle className="mr-2 h-6 w-6" />
-              Fale conosco no WhatsApp
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="mr-2 h-6 w-6" />
+                Fale conosco no WhatsApp
+              </a>
             </Button>
             <Button 
               variant="hero" 
