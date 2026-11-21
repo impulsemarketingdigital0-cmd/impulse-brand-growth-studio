@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Sparkles } from "lucide-react";
 
-const WHATSAPP_URL = "https://wa.me/5511941345199";
+const WHATSAPP_URL = `https://wa.me/5511941345199?text=${encodeURIComponent(
+  "Olá! Quero impulsionar minha marca!"
+)}`;
 
 const CTASection = () => {
   return (

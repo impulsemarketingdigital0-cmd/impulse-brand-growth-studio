@@ -2,7 +2,9 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle, Rocket } from "lucide-react";
 import logoImpulse from "@/assets/logo-impulse.png";
 
-const WHATSAPP_URL = "https://wa.me/5511941345199";
+const WHATSAPP_URL = `https://wa.me/5511941345199?text=${encodeURIComponent(
+  "Olá! Gostaria de impulsionar minha marca com a Impulse!"
+)}`;
 
 const Hero = () => {
   return (
